@@ -192,7 +192,7 @@ class Interface:
         self.pg = pygame
         pygame.init()
         self.tela = pygame.display.set_mode((LARGURA, ALTURA), pygame.RESIZABLE)
-        pygame.display.set_caption('Tetris Mondrian | composição em movimento')
+        pygame.display.set_caption('Tetris composição em movimento')
         self.quadro = pygame.Surface((LARGURA, ALTURA))
         self.fontes = {n: pygame.font.SysFont('Arial', n, bold=True)
                        for n in (14, 16, 18, 24, 36, 42)}
@@ -217,7 +217,7 @@ class Interface:
         self.caixa((0, 0, 800, 88), BRANCO)
         self.caixa((0, 0, 22, 88), VERMELHO)
         self.texto('TETRIS', 43, 8, 42)
-        self.texto('MONDRIAN', 216, 24, 24)
+        #self.texto('MONDRIAN', 216, 24, 24)
         self.texto('COMPOSIÇÃO EM MOVIMENTO', 46, 60, 14)
         self.caixa((640, 0, 160, 88), AZUL)
         self.caixa((596, 0, 44, 88), AMARELO)

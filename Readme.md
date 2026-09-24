@@ -41,14 +41,6 @@ O jogo pausa ao perder o foco da janela. Pressione P para retomar.
 - O jogo termina quando uma nova peça não cabe ou quando uma peça se fixa acima do tabuleiro.
 - Rotação com ajustes simplificados nas bordas; não implementa integralmente o sistema SRS, T-spins, combos ou reserva de peça.
 
-## Organização para o futuro capítulo
-
-1. Constantes: dimensões, paleta e matrizes dos tetraminós.
-2. `Peca`: representação e conversão de coordenadas.
-3. `Jogo`: sorteio, colisões, rotação, fixação, linhas, pontuação e tempo.
-4. `Interface`: composição gráfica e adaptação ao tamanho da janela.
-5. `main`: eventos, controles contínuos e laço principal a 60 quadros por segundo.
-
 A lógica de regras independe do Pygame, facilitando sua explicação e seus testes. Não há recursos gráficos externos, áudio, rede ou arquivos de recorde.
 
 Documentação técnica consultada: https://www.pygame.org/docs/
